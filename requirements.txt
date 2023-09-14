@@ -1,4 +1,2 @@
-pylint
 flask
-requests
 
