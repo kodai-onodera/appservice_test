@@ -13,10 +13,9 @@ def print_totp():
   
   dt = datetime.datetime.now()
   dt_str = dt.strftime("%Y/%m/%d %H:%M:%S")
-
-  result_html = "<html><body>" + dt_str + " Access from " + str(client_ip) + "<br><br></body><html>"
+  result = dt_str + " Access from " + str(client_ip)
   
-  return result_html
+  return result
 
 
 if __name__ == "__main__":
