@@ -13,7 +13,7 @@ def print_totp():
   
   dt = datetime.datetime.now()
   dt_str = dt.strftime("%Y/%m/%d %H:%M:%S")
-  result = dt_str + " Access from " + str(client_ip)
+  result = dt_str + "\n Access from " + str(client_ip) + "\n"
   
   return result
 
