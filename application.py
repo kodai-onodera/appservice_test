@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 
 @app.route('/',methods=['GET'])
-def print_totp():
+def print_ip():
   # client_ip = request.remote_addr
   client_ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
   
